@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1> About Us </h1>
+    <p> Lorem Ipsum </p>
+    <a href="{{ url_for('static', filename='car.jpg') }}"> here there is an image</a>
+    <a href="{{ url_for('index') }}"> here a link to the index page</a>
+{% endblock %}
+
+

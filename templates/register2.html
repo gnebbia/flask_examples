@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1> Register2 </h1>
+{% from "includes/_formhelpers.html" import render_field %}
+<form method="POST">
+
+    {{ form.hidden_tag() }}
+
+    {{form.name.label}}{{form.name}}
+    <br>
+    {{form.sex.label}}{{form.sex}}
+    <br>
+    {{form.food_choice.label}}{{form.food_choice}}
+    <br>
+    {{form.mood.label}}{{form.mood}}
+    <br>
+    {{form.feedback}}
+    <br>
+    {{form.submit()}}
+
+
+</form>
+{% endblock %}

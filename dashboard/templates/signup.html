@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1> About Us </h1>
+    <p> Lorem Ipsum </p>
+    <div class="jumbotron">
+        <p> Welcome to the signup page </p> 
+        <form action={{ url_for('thank_you') }}>
+
+            <label for="first"> First Name: </label>
+            <input type="text" name="first">
+
+            <label for="last"> Last Name: </label>
+            <input type="text" name="last">
+
+            <input type="submit" value="Submit Form">
+
+        </form>
+    </div>
+{% endblock %}
+
+

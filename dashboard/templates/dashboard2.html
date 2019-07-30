@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Dashboard2</h1>
+
+    <div class="row">
+
+        <div class="col-md-6 chart" id='bargraph'> 
+                <script>
+                    var graphs = {{plot | safe}};
+                    Plotly.plot('bargraph',graphs,{});
+                </script>
+        </div>
+
+        <div class="col-md-6 chart" id='piegraph'> 
+                <script>
+                    var graphs = {{plot2 | safe}};
+                    Plotly.plot('piegraph',graphs,{});
+                </script>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="chart" id='piegraph2'> 
+            <script>
+                var graphs3 = {{plot2 | safe}};
+                Plotly.plot('piegraph2',graphs3,{});
+            </script>
+        </div>
+    </div>
+
+<!--
+            <div class="chart" id="bargraph">
+-->
+{% endblock %}
+

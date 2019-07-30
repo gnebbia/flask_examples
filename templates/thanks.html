@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1> About Us </h1>
+    <p> Lorem Ipsum </p>
+    <div class="jumbotron">
+        <p>Thanks for signing up! </p> 
+
+        <ul>
+            <li>Name: {{session['name']}}</li>
+            <li>Sex: {{session['sex']}}</li>
+            <li>Mood: {{session['mood']}}</li>
+            <li>Food Choice: {{session['food_choice']}}</li>
+            <li>Feedback: {{session['feedback']}}</li>
+
+        </ul>
+
+
+    </div>
+{% endblock %}

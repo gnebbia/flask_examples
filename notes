@@ -1,0 +1,73 @@
+always put:
+export FLASK_APP=app.py
+
+
+set app.run(debug=True)
+while developing
+
+
+
+REST-ful is an architectural style of building API
+
+an API is just an interface, or a library, the simple metaphor is the waiter
+which is an API between me and the cook/kitchen.
+
+There are many wys to build APIs, but RESTful is one way and it uses the WEB so
+it uses HTTP.
+
+So a RESTful API is just like an API, but what happens is that this API may also 
+not be local, but be remote or in the cloud.
+
+This is very useful especially when we want to delegate work remotely for
+example we can think about an embedded device or a mobile phone which has to do
+some intensive task.
+
+Of course RESTful APIs can be used in many cases also when a big computation is
+not needed, but this is just one of the many typical scenarios. 
+
+Anyway to conclude RESTful API is just a normal API which is used through HTTP.
+
+The HTTP endpoints path will be in someway similar to the name of the methods in
+a classical API.
+
+
+RESTful APIs usually use:
+* GET to retrieve resources
+* POST to send information and expect a response, we use it to create also new
+  information
+* PUT this is used to update some information which is already on the server
+* DELETE this is used to delete some information
+
+POST anyway is very general so many people just stick to only use GET and POST
+and use POST instead of PUT or DELETE.
+
+There is a difference between web applications and web services.
+Indeed differences among them can be summarized in the following points:
+* Web Applications have a user interface, Web Services don't always have one
+* Web Applications are used in Business to Customer (B2C) scenarios more, while
+  Web Services are more used for (B2B)
+* Web Applications overload GET and POST method, while Web Services also use
+  other HTTP methodsk
+* A Web Application may be composed by more Web Services
+
+
+
+
+Web services dont always have a UI. They are normally API's using JSON, can also
+be SOA type using SOAP and XML primarily, can also be sockets, and servers and
+other micro web services, etc.. 
+
+
+When designing an API it's a good idea to draw a table called resource method
+chart.
+where each row contains a:
+* Resource, the code name of the resource (+, or - or * or /)
+* Method, the HTTP Method used
+* Path, the path where the resource will be accessible
+* Used for, description
+* Parameters, the expected parameters
+* Status On error, the various returned status code
+
+
+
+arrived at 82

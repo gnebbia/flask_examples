@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Jinja Tutorial</h1>
+    <div> {{simple}} </div>
+
+
+    <!-- LISTS -->
+    Now we print out the list
+    <div> {{lista}} </div>
+
+    Or a single list element
+    <div> {{lista[0]}} </div>
+    
+    Or in a reasonable way:
+    <ul>
+    {% for item in lista %}
+        <li> {{item}} </li>
+    {% endfor %}
+    </ul>
+
+    <!-- if/else statements -->
+    {% if "ciao" in lista %}
+    <div> "ciao" is in lista </div>
+    {% elif "puppy" in lista %}
+    <div> "puppy" is in lista </div>
+    {% else %}
+    <div> "ciao" is NOT in lista </div>
+    {% endif %}
+
+    <!-- DICTIONARIES -->
+    Now we print out the list
+    <div> {{diz}} </div>
+
+    Or a single list element
+    <div> {{diz['car']}} </div>
+
+
+{% endblock %}
